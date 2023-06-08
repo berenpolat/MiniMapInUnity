@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class MiniCameraDisplay : MonoBehaviour
+{
+    public RawImage miniCamImage;
+    public RenderTexture miniCamRenderTexture;
+
+    private void Start()
+    {
+        miniCamImage.texture = miniCamRenderTexture;
+    }
+
+
+//Attach this script into a canvas and add a rawImage under this canvas. Add another camera and set this camera view to a renderTextureImage.
+}
